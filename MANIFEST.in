@@ -1,0 +1,4 @@
+include barcode/DejaVuSansMono.ttf
+include test.py README.rst
+recursive-include *.rst *.py make.bat Makefile
+prune docs/_build/*
