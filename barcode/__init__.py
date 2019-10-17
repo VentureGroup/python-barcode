@@ -35,7 +35,7 @@ __classifiers__ = [
 ]
 
 from barcode.errors import BarcodeNotFoundError
-from barcode.codex import Code39, PZN, Code128
+from barcode.codex import Code39, PZN, Code128, GS1_128
 from barcode.ean import EAN8, EAN13, EAN14, JAN
 from barcode.isxn import ISBN10, ISBN13, ISSN
 from barcode.upc import UPCA
@@ -59,6 +59,7 @@ __BARCODE_MAP = dict(
     isbn=ISBN13,
     isbn13=ISBN13,
     gs1=ISBN13,
+    gs1_128=GS1_128,
     isbn10=ISBN10,
     issn=ISSN,
     code39=Code39,
